@@ -1,0 +1,147 @@
+:root {
+  --cyber-bg: #0f0f0f;
+  --cyber-accent: #00ffe7;
+  --cyber-purple: #c77dff;
+  --cyber-red: #ff4e4e;
+  --cyber-green: #23d18b;
+  --text-light: #e0e0e0;
+  --text-dim: #888;
+  --border-glow: 0 0 5px var(--cyber-accent);
+  --font-heading: 'Orbitron', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+}
+
+body {
+  background-color: var(--cyber-bg);
+  color: var(--text-light);
+  font-family: var(--font-mono);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 2rem;
+  border: 2px solid var(--cyber-purple);
+  border-radius: 16px;
+  background: #1a1a1a;
+  box-shadow: 0 0 15px var(--cyber-purple);
+}
+
+.section-header {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--cyber-accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-form label {
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+.admin-form input[type="text"],
+.admin-form textarea,
+.admin-form select {
+  background-color: #222;
+  color: var(--text-light);
+  border: 1px solid var(--cyber-accent);
+  padding: 10px;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+.admin-form input::placeholder {
+  color: var(--text-dim);
+}
+
+.cyber-button {
+  background-color: transparent;
+  color: var(--cyber-accent);
+  border: 2px solid var(--cyber-accent);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cyber-button:hover {
+  background-color: var(--cyber-accent);
+  color: #000;
+  box-shadow: 0 0 10px var(--cyber-accent);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.admin-table thead th {
+  background-color: #222;
+  color: var(--cyber-accent);
+  padding: 12px;
+  border-bottom: 2px solid var(--cyber-accent);
+  text-align: left;
+  font-family: var(--font-heading);
+}
+
+.admin-table td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.admin-table tr:hover {
+  background-color: #1f1f1f;
+}
+
+.table-action-btn {
+  background: transparent;
+  border: none;
+  color: var(--cyber-accent);
+  cursor: pointer;
+  padding: 6px;
+  transition: transform 0.15s ease-in-out;
+}
+
+.table-action-btn:hover {
+  color: var(--cyber-purple);
+  transform: scale(1.1);
+}
+
+.table-action-btn i {
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .admin-table td input,
+  .admin-table td textarea,
+  .admin-table td select {
+    width: 100%;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+     .auth-section {
+            position: relative;
+            padding: 5rem 1rem;
+            overflow: hidden;
+        }
+        
+        .auth-container {
+            position: relative;
+            z-index: 10;
+            max-width: 30rem;
+            margin: 0 auto;
+            background: linear-gradient(to bottom right, rgba(11, 11, 15, 0.9), rgba(25, 25, 35, 0.9));
+            border: 2px solid rgba(0, 240, 255, 0.3);
+            padding: 2rem;
+        }
+        
+        .auth-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .auth-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .auth-subtitle {
+            color: #9ca3af;
+        }
+        
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .form-label {
+            font-size: 0.875rem;
+            color: var(--cyber-blue);
+        }
+        
+        .form-group .cyber-input {
+            position: relative;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+		       .cyber-checkbox {
+		  appearance: none;
+		  width: 20px;
+		  height: 20px;
+		  background-color: #000;
+		  border: 2px solid #0ff;
+		  border-radius: 4px;
+		  cursor: pointer;
+		  position: relative;
+		}
+        
+		     .cyber-checkbox:checked::after {
+		  content: "+";
+		  position: absolute;
+		  left: 3px;
+		  top: 0;
+		  color: #0ff;
+		  font-size: 16px;
+		}
+        .auth-submit {
+            margin-top: 1rem;
+        }
+        
+        .auth-footer {
+            margin-top: 2rem;
+            text-align: center;
+            color: #9ca3af;
+        }
+        
+        .auth-footer a {
+            color: var(--cyber-blue);
+        }
+        
+        .form-error {
+            color: var(--cyber-red);
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        
+        .form-group.error .form-error {
+            display: block;
+        }
+        
+        .form-group.error .cyber-input {
+            border-color: var(--cyber-red);
+        }
+        
+        .social-login {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            justify-content: center;
+        }
+        
+        .social-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            background-color: rgba(11, 11, 15, 0.7);
+            border: 2px solid rgba(138, 43, 226, 0.5);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-button:hover {
+            transform: translateY(-3px);
+            border-color: var(--cyber-purple);
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.4);
+        }
+        
+        .social-button.google:hover {
+            color: #ea4335;
+        }
+        
+        .social-button.twitter:hover {
+            color: #1da1f2;
+        }
+        
+        .social-button.github:hover {
+            color: #6e5494;
+        }
+        
+        .social-button.discord:hover {
+            color: #7289da;
+        }
+        
+        .form-separator {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            color: #6b7280;
+        }
+        
+        .form-separator::before,
+        .form-separator::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(138, 43, 226, 0.5), transparent);
+        }
